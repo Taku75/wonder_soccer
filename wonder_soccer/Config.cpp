@@ -1,19 +1,28 @@
 #include "Config.h"
-#include "SceneMgr.h"
 #include "DxLib.h"
 
-//更新
-void Config_Update()
+Config::Config(ISceneChanger* changer) : BaseScene(changer) 
 {
-	if (CheckHitKey(KEY_INPUT_ESCAPE) != 0)
-	{	//Escキーが押されていたら
-		SceneMgr_ChangeScene(eScene_Start);//シーンをメニューに変更
+}
+
+//初期化
+void Config::Initialize() 
+{
+}
+
+//更新
+void Config::Update() 
+{
+	if (CheckHitKey(KEY_INPUT_ESCAPE) != 0) 
+	{	 //Escキーが押されていたら
+		mSceneChanger->ChangeScene(eScene_Start);//シーンをメニューに変更
 	}
 }
 
 //描画
-void Config_Draw()
+void Config::Draw()
 {
+	BaseScene::Draw();//親クラスの描画メソッドを呼ぶ
 	DrawString(0, 0, "設定画面です。", GetColor(255, 255, 255));
-	DrawString(0, 20, "Escキーを押すとスタート画面に戻ります。", GetColor(255, 255, 255));
+	DrawString(0, 20, "Escキーを押すとメニュー画面に戻ります。", GetColor(255, 255, 255));
 }

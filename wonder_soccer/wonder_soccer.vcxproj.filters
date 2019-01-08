@@ -5,13 +5,28 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
     <Filter Include="ヘッダー ファイル">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="ソース ファイル\Model">
+      <UniqueIdentifier>{3fe520f9-43ac-45a7-b1f0-189761bf6614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Image">
+      <UniqueIdentifier>{d88cd7c6-e219-49f4-953f-97eaf7725d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object">
+      <UniqueIdentifier>{b0e7e99b-5b4c-4e2b-9081-9df672210423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Model">
+      <UniqueIdentifier>{e32594b5-8379-46ee-ae6a-6d2f01307e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Image">
+      <UniqueIdentifier>{e6e01c25-b5bc-42d7-ba8d-e79b8567eabf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +48,24 @@
     <ClCompile Include="Keyboard.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ISceneChanger.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerGround.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerGoal.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerBall.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SceneMgr.h">
@@ -50,5 +83,72 @@
     <ClInclude Include="Keyboard.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ISceneChanger.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>ヘッダー ファイル\Object\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelMgr.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccorGround.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFactory.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSystem.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccerGoal.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccerBall.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CharCenter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\plane\Plane.x">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Model\Soccer ball\Soccer Ball Low.blend.x">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Model\Soccer field\Soccer Grount Base high optimised.blend.x">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Model\Soccer goal\goal low optimised.blend.x">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Model\Soccer man\Soccer man low polygon riged animeblend.mv1">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wonder_soccer1.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

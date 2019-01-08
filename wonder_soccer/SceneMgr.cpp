@@ -4,48 +4,59 @@
 #include "Start.h"
 #include "SceneMgr.h"
 
-static eScene Scene = eScene_Start;    //シーン管理変数
-
-									  //更新
-void SceneMgr_Update()
+SceneMgr::SceneMgr() :mNextScene(eScene_None) //次のシーン管理変数
 {
-	switch (Scene)
-	{   //シーンによって処理を分岐
-		case eScene_Start:    //現在の画面がメニューなら
-			Start_Update();   //メニュー画面の更新処理をする
-			break;//以下略
+	mScene = (BaseScene*) new Start(this);
+}
 
-		case eScene_Game:
-			Game_Update();
-			break;
+//初期化
+void SceneMgr::Initialize()
+{
+	mScene->Initialize();
+}
 
-		case eScene_Config:
-			Config_Update();
-			break;
+//終了処理
+void SceneMgr::Finalize() 
+{
+	mScene->Finalize();
+}
+
+//更新
+void SceneMgr::Update() 
+{
+	if (mNextScene != eScene_None) 
+	{    //次のシーンがセットされていたら
+		mScene->Finalize();//現在のシーンの終了処理を実行
+		delete mScene;
+		switch (mNextScene) 
+		{       //シーンによって処理を分岐
+			case eScene_Start:        //次の画面がメニューなら
+				mScene = (BaseScene*) new Start(this);   //メニュー画面のインスタンスを生成する
+				break;//以下略
+		
+			case eScene_Game:
+				mScene = (BaseScene*) new Game(this);
+				break;
+			
+			case eScene_Config:
+				mScene = (BaseScene*) new Config(this);
+				break;
+		}
+		mNextScene = eScene_None;    //次のシーン情報をクリア
+		mScene->Initialize();    //シーンを初期化
 	}
+
+	mScene->Update(); //シーンの更新
 }
 
 //描画
-void SceneMgr_Draw()
+void SceneMgr::Draw() 
 {
-	switch (Scene) 
-	{   //シーンによって処理を分岐
-		case eScene_Start:   //現在の画面がメニュー画面なら
-			Start_Draw();    //メニュー画面の描画処理をする
-			break;//以下略
-
-		case eScene_Game:
-			Game_Draw();
-			break;
-
-		case eScene_Config:
-			Config_Draw();
-			break;
-	}
+	mScene->Draw(); //シーンの描画
 }
 
 // 引数 nextScene にシーンを変更する
-void SceneMgr_ChangeScene(eScene NextScene) 
+void SceneMgr::ChangeScene(eScene NextScene) 
 {
-	Scene = NextScene;
+	mNextScene = NextScene;    //次のシーンをセットする
 }

@@ -1,6 +1,12 @@
 #pragma once
+#include "BaseScene.h"
+class Start : public BaseScene 
+{
+public:
+	Start(ISceneChanger* changer);
+	void Initialize() override;    //初期化処理をオーバーライド。
+								   //void Finalize() override ;        //終了処理をオーバーライド。
+	void Update() override;        //更新処理をオーバーライド。
+	void Draw() override;            //描画処理をオーバーライド。
 
-//更新
-void Start_Update();
-//描画
-void Start_Draw();
+};

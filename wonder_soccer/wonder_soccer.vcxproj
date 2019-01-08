@@ -100,6 +100,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\DxLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -122,19 +123,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="ISceneChanger.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="SoccerBall.cpp" />
+    <ClCompile Include="SoccerGoal.cpp" />
+    <ClCompile Include="SoccerGround.cpp" />
     <ClCompile Include="Start.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="CharCenter.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="ISceneChanger.h" />
     <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelFactory.h" />
+    <ClInclude Include="ModelMgr.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="SoccerBall.h" />
+    <ClInclude Include="SoccerGoal.h" />
+    <ClInclude Include="SoccorGround.h" />
     <ClInclude Include="Start.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\plane\Plane.x" />
+    <None Include="Model\Soccer ball\Soccer Ball Low.blend.x" />
+    <None Include="Model\Soccer field\Soccer Grount Base high optimised.blend.x" />
+    <None Include="Model\Soccer goal\goal low optimised.blend.x" />
+    <None Include="Model\Soccer man\Soccer man low polygon riged animeblend.mv1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wonder_soccer1.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
