@@ -2,11 +2,12 @@
 
 #include "BaseScene.h"
 #include "ISceneChanger.h"
+#include "StateMgr.h"
 
 //ゲーム画面クラス
 class Game : public BaseScene 
 {
-
+	StateMgr *stateMgr;
 public:
 	Game(ISceneChanger* changer);
 	void Initialize() override;    //初期化処理をオーバーライド。

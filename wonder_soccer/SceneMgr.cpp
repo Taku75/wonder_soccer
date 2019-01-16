@@ -1,7 +1,7 @@
 #include "DxLib.h"
-#include "Config.h"
 #include "Game.h"
 #include "Start.h"
+#include "Result.h"
 #include "SceneMgr.h"
 
 SceneMgr::SceneMgr() :mNextScene(eScene_None) //次のシーン管理変数
@@ -37,10 +37,8 @@ void SceneMgr::Update()
 			case eScene_Game:
 				mScene = (BaseScene*) new Game(this);
 				break;
-			
-			case eScene_Config:
-				mScene = (BaseScene*) new Config(this);
-				break;
+			case eScene_Result:
+				mScene = (BaseScene*) new Result(this);
 		}
 		mNextScene = eScene_None;    //次のシーン情報をクリア
 		mScene->Initialize();    //シーンを初期化

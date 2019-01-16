@@ -4,6 +4,9 @@
 
 class SoccerGround: public BaseModel
 {
+protected:
+	int tex_tomato_handle;
+	int audience_handle;
 public:
 	SoccerGround();
 	~SoccerGround();

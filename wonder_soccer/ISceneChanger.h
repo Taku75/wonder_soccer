@@ -3,8 +3,7 @@ typedef enum
 {
 	eScene_Start,    //ƒƒjƒ…[‰æ–Ê
 	eScene_Game,    //ƒQ[ƒ€‰æ–Ê
-	eScene_Config,  //İ’è‰æ–Ê
-
+	eScene_Result,
 	eScene_None,    //–³‚µ
 } eScene;
 

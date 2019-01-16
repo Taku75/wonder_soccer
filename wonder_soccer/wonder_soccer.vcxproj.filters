@@ -28,6 +28,9 @@
     <Filter Include="ヘッダー ファイル\Object\Image">
       <UniqueIdentifier>{e6e01c25-b5bc-42d7-ba8d-e79b8567eabf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\State">
+      <UniqueIdentifier>{b0755ebe-4378-4c2e-93e5-0bbb1d17e6cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -42,9 +45,6 @@
     <ClCompile Include="Start.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Config.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Keyboard.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -53,9 +53,6 @@
     </ClCompile>
     <ClCompile Include="BaseScene.cpp">
       <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Model.cpp">
-      <Filter>ヘッダー ファイル\Object\Model</Filter>
     </ClCompile>
     <ClCompile Include="SoccerGround.cpp">
       <Filter>ヘッダー ファイル\Object\Model</Filter>
@@ -66,6 +63,33 @@
     <ClCompile Include="SoccerBall.cpp">
       <Filter>ヘッダー ファイル\Object\Model</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerModel.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Keeper.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Serial.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMgr.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Initial.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Kick.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Serial.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SceneMgr.h">
@@ -75,9 +99,6 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Start.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Config.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Keyboard.h">
@@ -104,20 +125,8 @@
     <ClInclude Include="Image.h">
       <Filter>ヘッダー ファイル\Object\Image</Filter>
     </ClInclude>
-    <ClInclude Include="ModelMgr.h">
-      <Filter>ヘッダー ファイル\Object\Model</Filter>
-    </ClInclude>
     <ClInclude Include="SoccorGround.h">
       <Filter>ヘッダー ファイル\Object\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelFactory.h">
-      <Filter>ヘッダー ファイル\Object\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectFactory.h">
-      <Filter>ヘッダー ファイル\Object</Filter>
-    </ClInclude>
-    <ClInclude Include="TaskSystem.h">
-      <Filter>ヘッダー ファイル\Object</Filter>
     </ClInclude>
     <ClInclude Include="SoccerGoal.h">
       <Filter>ヘッダー ファイル\Object\Model</Filter>
@@ -126,6 +135,39 @@
       <Filter>ヘッダー ファイル\Object\Model</Filter>
     </ClInclude>
     <ClInclude Include="CharCenter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerModel.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Keeper.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>ヘッダー ファイル\Object\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Serial.h">
+      <Filter>ソース ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMgr.h">
+      <Filter>ソース ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="IStateChanger.h">
+      <Filter>ソース ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Initial.h">
+      <Filter>ソース ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Kick.h">
+      <Filter>ソース ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Serial.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Fps.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
