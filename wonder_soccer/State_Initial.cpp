@@ -41,7 +41,7 @@ void State_Initial::Draw()
 	DrawBox(20, 90, 620, 120, GetColor(255, 255, 255), TRUE);
 	DrawLineBox(20, 90, 620, 120, GetColor(100, 100, 100));
 	DrawString(40, 100, "キッカーデバイスの真ん中のボタンを押して初期化を行ってください", GetColor(0,0,0));
-	DrawString(440, 440, "残機", GetColor(255, 255, 255));
+	DrawString(430, 440, "残り球数", GetColor(255, 255, 255));
 	for (int i = 0; i < remain; i++)
 	{
 		ballhandle[i].x = 500 + i * 20;

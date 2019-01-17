@@ -5,6 +5,7 @@
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
+	//SetWindowText("wonder goal");
 	ChangeWindowMode(TRUE), DxLib_Init(), SetDrawScreen(DX_SCREEN_BACK); 
 	keeper = new Keeper();
 	soccerBall = new SoccerBall();

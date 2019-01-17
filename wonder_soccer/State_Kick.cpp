@@ -124,7 +124,7 @@ void State_Kick::Update()
 
 		if (x <= -39 && x >= -39.3)
 		{
-			if (y >= hy - 0.5 && y <= hy + 0.5 && z >= hz - 0.5 && z <= hz + 0.5)
+			if (y >= hy - 0.3 && y <= hy + 0.7 && z >= hz - 0.5 && z <= hz + 0.5)
 			{
 				vx = -vx;
 
@@ -221,7 +221,7 @@ void State_Kick::Draw()
 	soccerBall->Draw();
 	soccerGoal->Draw();
 	soccerGround->Draw();
-	DrawString(440, 440, "écã@", GetColor(255, 255, 255));
+	DrawString(430, 440, "écÇËãÖêî", GetColor(255, 255, 255));
 	for (int i = 0; i < remain; i++)
 	{
 		ballhandle[i].x = 500 + i * 20;

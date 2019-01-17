@@ -9,7 +9,7 @@ const static int GAME_Y = 240;    //「ゲーム」文字のy位置
 const static int CONFIG_Y = 300;    //「設定」文字のy位置
 const static int ScreenX = 640;
 const static char* GAME_SENT = "Press Enter Key";
-const static char* TITLE = "WONDER GOOL";
+const static char* TITLE = "WONDER GOAL";
 
 typedef enum
 {

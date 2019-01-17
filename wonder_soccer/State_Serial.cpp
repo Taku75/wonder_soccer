@@ -80,7 +80,7 @@ void State_Serial::Draw()
 	soccerGoal->Draw();
 	soccerGround->Draw();
 	if (!serial_flag)
-		DrawString(200, 10, "デバイスが接続されていません", GetColor(0,0,0));
+		DrawString(200, 20, "デバイスが接続されていません", GetColor(0,0,0));
 }
 
 void State_Serial::Finalize()

@@ -158,6 +158,8 @@
     <ClInclude Include="PlayerModel.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
+    <ClInclude Include="resource3.h" />
     <ClInclude Include="Result.h" />
     <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="Serial.h" />
@@ -172,14 +174,7 @@
     <ClInclude Include="Task.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Model\plane\Plane.x" />
-    <None Include="Model\Soccer ball\Soccer Ball Low.blend.x" />
-    <None Include="Model\Soccer field\Soccer Grount Base high optimised.blend.x" />
-    <None Include="Model\Soccer goal\goal low optimised.blend.x" />
-    <None Include="Model\Soccer man\Soccer man low polygon riged animeblend.mv1" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="wonder_soccer1.rc" />
+    <ResourceCompile Include="wonder_soccer3.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

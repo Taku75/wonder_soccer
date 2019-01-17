@@ -170,26 +170,15 @@
     <ClInclude Include="Result.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Model\plane\Plane.x">
-      <Filter>リソース ファイル</Filter>
-    </None>
-    <None Include="Model\Soccer ball\Soccer Ball Low.blend.x">
-      <Filter>リソース ファイル</Filter>
-    </None>
-    <None Include="Model\Soccer field\Soccer Grount Base high optimised.blend.x">
-      <Filter>リソース ファイル</Filter>
-    </None>
-    <None Include="Model\Soccer goal\goal low optimised.blend.x">
-      <Filter>リソース ファイル</Filter>
-    </None>
-    <None Include="Model\Soccer man\Soccer man low polygon riged animeblend.mv1">
-      <Filter>リソース ファイル</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="wonder_soccer1.rc">
+    <ResourceCompile Include="wonder_soccer3.rc">
       <Filter>リソース ファイル</Filter>
     </ResourceCompile>
   </ItemGroup>
